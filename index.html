@@ -1,0 +1,150 @@
+<!-- navbar, rodape, tabela e tela adaptativa -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteger os Animais</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+        body {
+            background-color: rgb(184, 118, 218);
+        }
+
+        header {
+            position: sticky;
+            top: 0%;
+        }
+
+        img {
+            width: 20%;
+            height: 20%;
+        }
+
+        .div-init {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+            
+        }
+
+        .table {
+            width: 50%;
+            margin: 400px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-brand {
+            font-size: 80%;
+            color: red;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background-color: yellow;
+            padding: 10px 20px;
+        }
+
+        .nav-link {
+            color: black;
+            font-size:  1.1rem;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .navbar-nav .navlink:hover {
+            color: black;
+            border-radius: 5px;
+            background-color: rgb(149, 200, 8);
+        }
+
+        footer {
+            padding: 20px 0;
+            background-color: rgba(133, 96, 151, 0.795);
+        }
+
+        /**/
+        footer .social-icon {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Proteger os Animais</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="table">Instituições</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="rodape">Rodape</a>
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <div class="div-init">
+        <h1 id="init">Ajude os Animalzinho</h1>
+    </div>
+    <br><br>
+    <div class="div-init">
+        <img src="https://portalsustentabilidade.com/wp-content/uploads/2022/03/Design-sem-nome-18.jpg" alt="">
+    </div>
+
+    <table  class="table table-bordered text-center">
+        <tr class="table-warning table-dark">
+            <th>Setor Responsável</th>
+            <th>Ação Planejada/Executada</th>
+            <th class="d-none d-sm-table-cell">Periodo</th>
+            <th class="d-none d-md-table-cell">Status</th>
+        </tr>
+
+        <tr>
+            <td>Ibama</td>
+            <td>Cuidar dos Animais</td>
+            <td class="d-none d-sm-table-cell">Anual</td>
+            <td class="d-none d-md-table-cell">Em Execução</td>
+        </tr>
+
+        <tr id="table">
+            <td>PNPMPECA</td>
+            <td>Cuidar de Cães e Gatos</td>
+            <td class="d-none d-sm-table-cell">Mensal</td>
+            <td class="d-none d-md-table-cell">Em Execução</td>
+        </tr>
+    </table>
+
+    <footer id="rodape">
+        <div class="row-cols-lg-auto">
+            <div class="col-md-6 text-md-center">
+                <h3>Coisas</h3>
+                <p>&copy; 2025 | Todos os direitos reservados</p>
+            </div>
+            <div class="col-md-6 text-md-center">
+                <h3>Nos Siga</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
